@@ -1,0 +1,462 @@
+
+
+.slider {
+    margin: 1rem auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 60rem;
+}
+
+.slider-slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 1s;
+}
+
+.slider-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-slide__dis {
+    position: absolute;
+    top: 50%;
+    right: 7rem;
+    transform: translateY(-50%);
+    & h2{
+font-size: 2.2rem;
+color: $secondary-color ;
+text-transform: uppercase;
+    }
+    & button{
+     border: none;
+     background-color: transparent;
+     color: 
+     $secondary-color ;
+     font-weight: 700;
+     border: 1px solid #ffffffe8;
+     margin: 1rem;
+     padding: .8rem 1.1rem;
+     width: 70%;
+     font-size: 1.2rem;
+     text-transform: uppercase;
+     &:hover{
+        background-color: #fff;
+        color:$primary-color ;
+     }
+
+    }
+}
+
+.slider__left, .slider__right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.slider__left {
+    left: 1rem;
+}
+
+.slider__right {
+    right: 1rem;
+}
+
+.dots {
+     position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots div {
+    width: 1.4rem;
+    height: 1rem;
+    background: yellow;
+    border-radius: 50%;
+    cursor: pointer;
+
+     margin-right: 1.75rem;
+}
+.shop{
+
+    h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  
+  font-size: clamp(1.8rem 1.7vw, 2.7rem);
+  & span{
+    padding: 1rem;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(1.4rem 1.7vw, 2.1rem);
+    color: $primary-color;
+
+  }
+    }
+    .line{
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.141);
+
+        height: 3px;
+    }
+.cards{
+   padding: 2rem;
+    max-width: 100rem;
+display: grid;
+justify-content: center;
+align-items: center;
+margin:auto  auto;
+grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+gap: 2rem;
+    &__card{
+  & img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+      }
+      & h4{
+        margin: .5rem;
+        color: $primary-color;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: clamp(1.1rem, 1.7vw, 1.6rem);
+        & a{
+            color: $primary-color;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+      }
+    }
+}
+}
+.random{
+
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+justify-content: center;
+align-items: center;
+&__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    & h3{
+        margin: .5rem;
+        color: $primary-color;
+        text-align: center;
+        text-transform:capitalize;
+        font-weight: 600;
+        font-size: clamp(1.4rem, 2vw, 2rem);
+        padding: .5rem;
+
+    }
+    & a{
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 800;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: .5rem;
+        color: black;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    & p{
+        font-size: clamp(1.1rem, 1.4vw, 1.5rem);
+        font-weight: 600;
+        font-style: italic;
+        color: $primary-color;
+        text-transform: capitalize;
+
+    }
+}
+}
+
+
+
+ .slidecarda{
+    max-width: 80rem;
+    width: 100%;
+  margin: auto;
+  position: relative;
+padding: 2rem;
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        
+        font-size: clamp(1.8rem 1.7vw, 2.7rem);
+        & span{
+          padding: .3rem;
+          text-transform: uppercase;
+          font-style: oblique;
+          font-style: italic;
+          font-weight: 500;
+          font-size: clamp(1.4rem 1.7vw, 2.1rem);
+          color: $primary-color;
+          
+          display: inline;
+      
+        }
+          }
+          .line{
+              width: 50%;
+              background-color: rgba(0, 0, 0, 0.141);
+      
+              height: 3px;
+          }
+   .sliderwrapper{
+
+    position: relative;
+    overflow: hidden;
+    .cardslide{
+     display: flex;
+     transition: .5s ease-in-out;
+         &__slider{
+             
+            flex: 0 0 14rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        & img{
+         width: 100%;
+         height: auto;
+         border-radius: 10px;
+        }
+        & h4{
+ 
+        }
+        & p{
+ 
+        }
+        & span{
+ 
+        }
+         }
+     }
+   }
+  
+    .btn{
+        position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: aqua;   
+    cursor: pointer;
+    
+       }
+       .left{
+      
+    left: 0;
+       }
+       .right {
+  right: 0;
+      } 
+      .donts{
+        display: flex;
+        justify-content: center;
+    margin-top: 3rem;
+      }
+    .dont{
+        width: 0.7rem;
+        height: 0.7rem;
+        background-color: black;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 5px;
+&:hover{
+    background-color: #ccc;
+}
+        .dotnactive{
+            background-color: #ccc;
+
+
+        }
+    }
+}
+ 
+.service{
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        
+        font-size: clamp(1.8rem 1.7vw, 2.7rem);
+        & span{
+          padding: .3rem;
+          text-transform: uppercase;
+          font-style: oblique;
+          font-style: italic;
+          font-weight: 500;
+          font-size: clamp(1.4rem 1.7vw, 2.1rem);
+          color: $primary-color;
+          
+          display: inline;
+      
+        }
+          }
+          .line{
+              width: 50%;
+              background-color: rgba(0, 0, 0, 0.141);
+      
+              height: 3px;
+          }
+.cards{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));  
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+   &__card{
+ 
+       display: flex;
+      padding: 2rem;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        & img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+        }
+        & h4{
+       font-size: clamp(1.5rem, 2.5vw, 1.6rem);
+       text-transform: uppercase;
+       margin: 1rem;
+     
+        }
+        & a{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $primary-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        transition: all .3s ease-in-out;
+        padding: .9rem;
+        margin: .8rem;
+        &:hover{
+            background-color: black;
+            color: $secondary-color;
+        }
+        }
+    }
+}
+}
+
+.form {
+    padding: 2rem;
+    margin: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & h1{
+    font-weight: 400;
+
+    }
+    &__for{
+        display: flex;
+        gap: 1rem;
+        & input{
+            width: 100%;
+           /* Increase padding for larger input */
+            font-size: 3rem; /* Corrected font-size */
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+       &::placeholder{
+        font-size: 1rem;
+        text-align: center;
+       }
+       
+        }
+        & button{
+            display: flex;
+            padding: 1.6rem 1.8rem;
+        margin: 1rem; 
+        justify-content: center;
+        align-items: center;
+        gap: .3rem;
+        border: none;
+        font-size: 4rem;
+        text-transform: uppercase;
+        background-color: black;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        & span{
+font-size: 1rem;
+        }
+      &:hover{
+        background-color:#686D76 ;
+      }
+        }
+       
+    }
+    & p{
+        text-align: center;
+        color: $primary-color;
+        text-transform: capitalize;
+        font-size: clamp(1.5rem, 1.7vw , 1.5rem);
+        font-weight: 800;
+        & a{
+    color: #686D76;
+    transition: .6s ease-in-out;
+    &:hover{
+        text-decoration: none;
+    }
+        }   
+    }   
+}
+
+@media screen and (max-width: 40rem) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: center;
+    }
+ 
+}

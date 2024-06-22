@@ -1,0 +1,109 @@
+.shoes{
+    .shoebtncontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 2rem;
+        &__btn{
+            background-color: transparent;
+               outline: none;
+               border: none;
+               font-size: 1.5rem;
+               border: 1px solid black;
+               padding: 1rem;
+               text-transform: capitalize;
+               transition: all 0.7s ease-in-out;
+
+               &:hover {
+                   background-color: black;
+                   color: #fff;
+               }
+
+               &.shoeactive {
+                   background-color: black;
+                   color: #fff;
+               }
+
+        }
+    }
+    .shoe{
+        .shoecontentcontainer{
+           
+&__content{
+  
+            transition: all .8s ease-in-out;
+          display: grid;
+               margin: 2rem;
+               grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+              justify-content: center;
+              align-items: center;
+              
+               gap: 2rem;
+             
+    &__item {
+        transition: all 0.7s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            border: 1px solid black;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        & span {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            margin: 0.4rem;
+
+            color: rgba(0, 0, 0, 0.445);
+        }
+
+        & h5 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 0.6em;
+        }
+
+        & p {
+            text-transform: capitalize;
+        }
+        .btncolor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           gap: .8rem;
+           margin: .5rem;
+           & button{
+            cursor: pointer;
+            width: 2rem;
+            height:2rem;
+            border: none;
+           
+           }
+        }
+    }
+
+        }
+    }
+    
+
+    }
+  
+}
+.shoecontentcontainer__content--shoecontentactive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)  );
+    justify-items: center;
+    gap: 2rem;
+    display: block;
+    
+}

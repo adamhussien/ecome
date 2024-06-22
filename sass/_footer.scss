@@ -1,0 +1,161 @@
+.footer{
+    display: flex;
+    background-color:#EEEEEE;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__lists{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+margin: 2rem;
+gap: 5rem;
+        &__list{
+         
+            & li{
+                text-transform: capitalize;
+                font-weight: 600;
+                margin: 1rem;
+                list-style: none;
+                font-size: clamp(1.1rem, 1.2vw, 1.2rem);
+                & a {
+                text-decoration: none;
+                color: $primary-color;
+                transition: none .2s ease-in-out;
+                   &:hover{
+                    border-bottom: 1px solid $primary-color;
+                   }
+                }
+            }
+        }
+    }
+  .blm{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+ justify-items: center;
+ gap: 2rem;
+   width: 100%;
+   padding: 2rem;
+    .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.8rem;
+       
+      
+        & i{
+            transition: .2s ease-in-out;
+     font-size: 2rem;
+     &:hover{
+       color: $primary-color;
+    } 
+        }
+    }
+    .extra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.8rem;
+        & p{
+          text-transform: capitalize;
+          font-size: 1.2rem;
+            & a{
+color: #373A40;
+text-decoration: none;
+transition: all .6s ease-in-out;
+&:hover{
+border-bottom: 1px solid #373A40;
+}
+            }
+        }
+    }
+    .btn{
+& button{
+    border: none;
+    outline: none;
+    border-color: transparent; 
+    border: 1px solid rgba(0, 0, 0, 0.449);
+    padding:15px 32px;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}
+    }
+  }
+    .bottom{
+        background-color:white;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      justify-items: center;
+      padding: 2.5rem;
+      & p{
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #373A40;
+        transition: all .6s ease-in-out;
+        &:hover{
+            border-bottom: 1px solid black;
+        }
+      }
+    .terms{
+        display: flex;
+        gap: .6rem;
+        & a{
+      transition: all 2s ease-out;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #373A40;
+      text-transform: capitalize;
+      &:hover{
+        border-bottom: 1px solid black;
+      }
+        }
+    }
+    }
+ }
+    
+    .togfoot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+&.fa-plus{
+    display: none;
+}
+    }
+ 
+
+@media screen and (max-width: 40em){
+.cards{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+    .fa-plus{
+        display: block;
+    }
+    .footer__lists__list{
+        display: none;
+       transition: all ease 2s;
+    }
+    .footer__lists{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .listactive{
+        display: block;
+    }
+
+    .fa-minus {
+        content: "\f068"; /* Unicode for FontAwesome minus icon */
+    }
+}
